@@ -1,0 +1,124 @@
+<style>
+  body {
+    background-color: rgb(74, 152, 241);
+  }
+  .topnav {
+  overflow: hidden;
+  background-color: rgb(71, 64, 64);
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: right;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+.topnav a.active {
+  background-color: #8fa4b3;
+  color: rgb(0, 0, 0);
+}
+.sidenav {
+  height: 100%;
+  width: 140px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(71, 64, 64);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #ffffff;
+  display: block;
+}
+.sidenav a.active {
+  background-color: #8bbbdb;
+  color: rgb(0, 0, 0);
+}
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.main {
+  margin-left: 140px; /* Same as the width of the sidenav */
+}
+input[type=submit] {
+    border-radius: 10px;
+  background-color: rgb(71, 64, 64);
+  border: none;
+  color: white;
+  padding: 10px 8px;
+  text-decoration: none;
+  margin: 3px 2px;
+  cursor: pointer;
+  font-size: 12px; 
+}
+
+input[type=submit]:hover{
+  background-color: orange
+}
+  </style>
+<!DOCTYPE html>
+<html>
+<head>
+  
+<title>My Flask Web App</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/homez10.css') }}">
+</head>
+<body>
+  <div class="main">
+  <div class="topnav">
+    <a><form action="/logout" method="POST">
+      <input type="submit" value="登出"></a>
+      <a><form action="/logout" method="POST">
+        <input type="submit" value="帳號資料"></a>
+        <a><form action="/logout" method="POST">
+          <input type="submit" value="經紀帳號"></a>
+        <a><img src="./static/eadmin.png" style="width:40px;height:40px;"></a>
+
+
+
+        </form></form></form>
+
+  </div></div>
+  <div class="sidenav">
+  
+    <br><br><br><br><br><br>
+    <a  href="./homeagent">首頁</a>
+    <br>
+    <a href="./register1">客戶登記</a>
+
+
+  </div>
+
+
+<div class="main">
+  <br>
+
+  <iframe src="https://www.cognitoforms.com/f/Ix9MB0cRBEeg7wDycUu8uA?id=26" style="position:relative;width:1px;min-width:100%;*width:100%;" frameborder="0" scrolling="yes" seamless="seamless" height="748" width="100%"></iframe>
+  <script src="https://www.cognitoforms.com/scripts/embed.js"></script>
+
+<div class="center" style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+
+  <form action="/rebackhome" method="POST">
+  <input type="submit" value="刷新">
+
+
+</form>
+</div>
+
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+Flask==0.12.3 
+gunicorn==19.6.0	
+pandas==1.0.5
+numpy==1.19.1
+scipy==0.19.1
+scikit-learn>=0.18
+flask_session_captcha
+flask_sessionstore
+oauth2client
+gspread
+uuid
+flask_qrcode
+flask_sqlalchemy
