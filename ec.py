@@ -58,10 +58,10 @@ def do_admin_login():
         session['counter'] = 3
         data.zza=3
     if session.get('counter')>0:
-        if request.form['password'] == '111' and request.form['username'] == 'admin' and captcha.validate():
+        if request.form['password'] == '123' and request.form['username'] == 'admin' and captcha.validate():
             session['logged_in'] = True
             return render_template("home.html")
-        elif request.form['password'] == '111' and request.form['username'] == 'agent' and captcha.validate():
+        elif request.form['password'] == '321' and request.form['username'] == 'agent' and captcha.validate():
             session['logged_in'] = True
             return render_template("homeagent.html")
         else:
@@ -209,7 +209,7 @@ def pass1():
             dic.update({str(i):lpp[i]})
         
 
-        if str(to_predict_list['z'])=='a77' and str(to_predict_list['zs'])=='roman':
+        if str(to_predict_list['z'])=='123' and str(to_predict_list['zs'])=='roman':
             name='Roman'
             
             df=pd.DataFrame.from_dict(dic, orient='index',columns=df[0].keys())
