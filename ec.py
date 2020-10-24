@@ -3,7 +3,6 @@
 #export excel
 #單量
 
-
 from __future__ import print_function
 
 from flask_qrcode import QRcode
@@ -81,25 +80,25 @@ def logout():
         session['logged_in'] = False
         return redirect('/')
 
-@app.route("/agentrecord", methods=['GET'])
+@app.route("/agentrecord", methods=['POST','GET'])
 def agentrecord():
         return render_template('agentrecord.html')
-@app.route("/clientrecord", methods=['GET'])
+@app.route("/clientrecord", methods=['POST','GET'])
 def clientrecord():
         return render_template('clientrecord.html')
-@app.route("/register", methods=['GET'])
+@app.route("/register", methods=['POST','GET'])
 def register():
         return render_template('register.html')
-@app.route("/clientregister", methods=['GET'])
+@app.route("/clientregister", methods=['POST','GET'])
 def clientregister():
         return render_template('clientregister.html')
-@app.route("/register1", methods=['GET'])
+@app.route("/register1", methods=['POST','GET'])
 def register1():
         return render_template('register1.html')
-@app.route("/clientregister1", methods=['GET'])
+@app.route("/clientregister1", methods=['POST','GET'])
 def clientregister1():
         return render_template('clientregister1.html')
-@app.route("/homeagent", methods=['GET'])
+@app.route("/homeagent", methods=['POST','GET'])
 def homeagent():
         return render_template('homeagent.html')
 
